@@ -1,0 +1,263 @@
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+.header-image {
+    float: none
+    max-width: 100%; 
+    height: auto;   
+    border-radius: 10px;
+    padding-top: 0;    
+}
+
+body {
+    background-image: url('images/background2.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    color: #e0e0e0; /* Couleur du texte plus doux et lisible que blanc pur */ 
+    font-family: Georgia, serif;
+    margin: 80px; 
+    padding: 0;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+div {
+    background-color: rgba(0, 0, 0, 0.6); /* Ajoute un encart plus foncé sur les sections pour une meilleure lisibilité */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+
+}
+
+a:hover {
+    color: #7bcbed;
+    text-decoration: underline;
+    font-weight: bold;
+    transform: scale(1.1); /* Zoom sur le lien au survol */
+}
+button {
+    background-color: #50bdec;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    }
+
+button:hover {
+    background-color: #7bcbed;
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3 {
+    text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.6); /* Ombres sur le texte */
+}
+
+li {
+    font-size: 1.25rem;
+    text-align: justify;
+    text-justify: inter-word; 
+   
+  }
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0; 
+    
+}
+
+ul.icones li {
+    display: flex;
+    align-items: center; 
+     
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+}
+
+ul li a i {
+    margin-right: 20px; 
+}
+
+ul:not(.icones) li {
+    padding-left: 15px; /* Décalage pour les autres listes sans icônes */
+}
+
+/* Par défaut, les icônes sont visibles sur ordinateur */
+ul.icones li i {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Flèche V cachée sur ordi */
+.arrow-v {
+    display: none;
+}
+
+footer {
+    padding: 5px 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(26, 6, 69, 0.6);
+       
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.contact-btn {
+    display: inline-block; /* Pour que le bouton ne prenne que la largeur nécessaire */
+    background-color: #50bdec;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+}
+
+.contact-btn:hover {
+    background-color: #7bcbed;
+    color: white;
+}   
+
+/* Section pour la lisibilité sur mobile */
+@media (max-width: 480px) {
+
+   header {
+    justify-content: center;
+   }
+
+  .header-image {
+        max-width: 200px; 
+        height: auto;        
+        border-radius: 10px; 
+        padding-top: 0;
+        margin-bottom: 20px;
+        float: none;
+
+    }
+
+    body {
+        margin: 20px;
+        padding: 0;
+        font-size: 16px; 
+        padding-bottom: 100px; /* Ajoute de l'espace en bas pour le footer */
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    div {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    h2 {
+        font-size: 1.4rem; 
+    }
+
+    h3 {
+        font-size: 1.2rem; 
+    }
+
+    p, li {
+        font-size: 1rem; 
+    }
+
+    button, .contact-btn {
+        font-size: 1rem;
+        padding: 8px 16px; 
+    }
+
+    a {
+        font-size: 1.125rem; 
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 0.9rem; 
+    }
+
+ul li i {
+    display: flex;
+    align-items: center;
+}
+
+ul li a i {
+    margin-right: 5px; 
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+    /* Afficher la flèche de déroulé */
+    .arrow-v {
+        display: inline-block; 
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #f0ecec;
+        border-bottom: 2px solid #f3eeee;
+        transform: rotate(45deg);
+        margin-left: 0;
+        margin-right: 20px;
+        transition: transform 0.3s ease;
+    }
+ }

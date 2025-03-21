@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Présentation & Portfolio Aml</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">        
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">       
+  </head> 
+
+  <body>
+    <header>
+        <h1>Présentation & Portfolio</h1>
+        <h2> Aurore Muller</h2>
+        <img src="images/photo.png" alt="photo" class="header-image">
+        <h3>En reconversion vers le développement web</h3>        
+   </header>
+
+    <p>Passionnée par la création digitale, je me forme activement à HTML, CSS et JavaScript pour donner vie à mes premiers projets et réorienter ma carrière dans la tech en tant que développeuse web.</p>
+   
+    <ul>
+        <!-- pour afficher la liste uniquement et dévoiler les textes lors du clic -->
+        <li><a href="javascript:void(0);" onclick="toggleSection('motivations')"><span class="arrow-v"></span><i class="fas fa-star"></i>Mes motivations</a></li>
+        <li><a href="javascript:void(0);" onclick="toggleSection('easyrecycle')"><span class="arrow-v"></span><i class="fas fa-check-circle"></i>Projet finalisé : Easyrecycle</a></li>
+        <li><a href="javascript:void(0);" onclick="toggleSection('projets')"><span class="arrow-v"></span><i class="fas fa-tasks"></i>Projets à venir</a></li>
+        <li><a href="https://cvdesignr.com/p/6752ca073f754" target="_blank" rel="noopener noreferrer"><span class="arrow-v"></span><i class="fas fa-file-alt"></i> Mon CV</a></li>           
+    </ul>    <!-- noopener noreferrer empêche la nouvelle page d'executer des actions malveillantes sur la page principale et de savoir d'où provient le lien -->
+
+     <!-- définir les textes en div = créer un bloc sur lequel appliquer un style en particulier , ici application de masquage / affichage -->
+ <div id="motivations" style="display:none;">
+      <h3>Mes Motivations</h3>
+      <p>Actuellement en reconversion professionnelle, je souhaite m'orienter vers le développement web, un secteur passionnant et en constante évolution qui correspond parfaitement à mes aspirations et mon profil.</p>
+      <p>Mon parcours professionnel dans le management et la gestion de projet m’a donné l’opportunité de travailler sur le développement et l’optimisation d’un outil de gestion de la relation client. N’ayant pas directement contribué au codage, j'ai joué un rôle déterminant en y apportant des inputs stratégiques. Cette expérience m’a permis de comprendre l'impact de la technologie sur l'amélioration de l'expérience utilisateur, la satisfaction client, et sur l'optimisation de la communication et de l'efficacité des équipes.</p>
+      <p>Fin 2024, un bilan de compétences m’a permis de découvrir le métier de développeur web, qui correspond à la fois à mes aspirations professionnelles, mon intérêt pour les technologies innovantes, et à mon souhait de créer des solutions utiles tout en exploitant ma créativité.</p>
+      <p>Pour préparer cette reconversion, j’ai commencé à m’auto-former en HTML, CSS et JavaScript, et j’ai réalisé un premier projet personnel ainsi que cette page de présentation. Cette démarche m’a permis de confirmer mon goût pour la logique et l’apprentissage du code, la résolution de problèmes et la créativité digitale.</p>
+      <p>Ma capacité à apprendre rapidement, mon sens de l’analyse, et mon engagement à m’investir pleinement dans ce nouveau domaine sont des atouts que je souhaite mettre à profit dans une formation diplômante. Je suis également motivée par le travail collaboratif et les projets concrets, qui me permettront de monter en compétences.</p>
+      <p>Intégrer une formation représente pour moi l’opportunité idéale de me professionnaliser et d'acquérir des compétences techniques solides pour réussir ma reconversion vers le développement web.</p>
+ </div>
+
+  
+  <div id="easyrecycle" style="display:none;">
+      <h3>Easyrecycle</h3>
+      <p>EasyRecycle est mon tout premier projet web, réalisé en partant de zéro, sans aucune connaissance préalable en développement. Il répond à un besoin concret que j’ai observé : la difficulté à savoir dans quel bac jeter certains déchets, malgré la multiplication des consignes de tri.</p>
+      <p>J’ai conçu une interface simple et épurée, pensée pour offrir une réponse rapide et intuitive, sans surcharge d’informations ni manipulations complexes.</p>
+      <p>Pour ce projet, j'ai suivi les cours en ligne du MDN Web Docs, en explorant notamment les bases d’HTML, de CSS, ainsi que le tutoriel "Premiers pas" en JavaScript avec le jeu "Number-guessing". J’ai également utilisé ChatGPT pour m’aider à comprendre et résoudre certaines problématiques de mise en forme qui se sont présentées au fil du projet, et pour m’initier à la création d’une base de données au format JSON.</p>
+      <p>Une difficulté majeure a été la recherche d'une API adaptée : les bases existantes ne correspondaient pas aux consignes de tri locales, très variables en France. Pour contourner cela, j’ai créé ma propre base de données (non exhaustive) regroupant les déchets du quotidien les plus courants, en me basant sur les pratiques de tri de ma région.</p>
+      <p>J’ai pris soin de commenter mon code tout au long du développement afin de pouvoir m’y référer pour mes futurs projets et consolider mes apprentissages.</p>
+      <p>Ce projet m'a permis d'apprendre beaucoup de concepts essentiels en développement web et de réaliser la complexité qu'il y a derrière même des applications simples. C'est un premier pas vers des projets plus ambitieux.</p>
+      <button onclick="window.open('https://gagathe121.github.io/easyrecyle/', '_blank')">Visiter le site</button>
+  </div>
+
+  <div id="projets" style="display:none;">
+    <h3>Projets à venir</h3>
+  
+   
+    <p>Passionnée de coloriage et active dans la communauté, j'ai constaté que les outils et supports pratiques comme les trackers, nuanciers et autres aides sont très appréciés. Ces projets me motivent particulièrement, car ils combinent mes intérêts tout en enrichissant mon apprentissage et en offrant des solutions utiles à la communauté.</p>
+   
+    <ul>
+        <li><a href="javascript:void(0);" onclick="toggleSection('projet2')"><span class="arrow-v"></span>Projet 2 : Liste de couleurs</a></li>
+        <li><a href="javascript:void(0);" onclick="toggleSection('projet3')"><span class="arrow-v"></span>Projet 3 : Trackers et nuanciers personnalisables</a></li>
+    </ul>
+</div>
+    
+        <div id="projet2" style="display:none;">
+        <p><strong>Projet 2</strong> : Liste de couleurs</p>
+        <p>Descriptif : Un site web qui permet à l’utilisateur de créer une liste personnalisée avec 3 colonnes pour référencer son matériel selon un nuancier numéroté. Le titre est personnalisable et la fonction impression est intégrée.</p>
+        <p><em>Ce que je vais apprendre:</em></p>
+         <ul>
+            <li>Formulaires dynamiques : Gérer la saisie et l’affichage d’un titre personnalisé ainsi que du contenu structuré (ex : liste de matériel).</li>
+            <li>Mise en page en colonnes: Manipuler le DOM et utiliser CSS Grid/Flexbox pour créer et organiser une liste sur 3 colonnes.</li>
+            <li>Impression & export PDF : Apprendre à utiliser les media queries CSS "print" pour un rendu imprimable et gérer l’export en PDF via le navigateur.</li>
+         </ul>
+         </div>
+         <br>
+         <br>
+        <div id="projet3" style="display:none;">
+        <p><strong>Projet 3</strong> : Trackers et nuanciers personnalisables à imprimer</p>
+        <p>Descriptif : Un site qui propose des modèles de nuancier et de tracker (créés sur Canva) personnalisables par l’utilisateur. Il pourra ajouter un titre et une photo (par exemple, une couverture de livre de coloriage) et imprimer son document personnalisé.</p>
+        <p><em>Ce que je vais apprendre:</em></p>
+         <ul>
+            <li>Ajout d’image personnalisée : Permettre à l’utilisateur de téléverser une photo et l’insérer dans un modèle de document.</li>
+            <li>Insertion de texte sur un modèle visuel : Permettre l’ajout d’un titre personnalisé et l’afficher sur un modèle Canva prêt à être imprimé.</li> 
+            <li>Affichage et impression d’un document personnalisé : Intégrer un modèle Canva sur le site, autoriser l’ajout d’images et de texte, et garantir une impression de qualité avec des media queries "print" ou un export en PDF.</li>
+         </ul>
+        </div>    
+  
+
+<footer>
+    <p><a href="mailto:aurormuller@gmail.com" class="contact-btn">Me contacter</a></p>
+    <p>© 2025 Site réalisé avec HTML, CSS et JavaScript - By Aml</p>
+</footer>
+
+  <script src="script.js"></script>
+  
+  </body>
+</html>
