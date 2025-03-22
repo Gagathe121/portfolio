@@ -254,6 +254,25 @@ footer p {
         font-size: 0.9rem; 
     }
 
+    footer p {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #fff;
+
+    }
+    .apropos-link {
+        color: #ffffff; /* Blanc, comme ton footer */
+        text-decoration: underline; /* Souligné comme un lien */
+        cursor: pointer; /* Curseur en main */
+        display: inline-block;
+        margin-top: 2px;
+        font-size: 0.9em; 
+        
+      }
+    #apropos-content { /* Contenu de la page À propos masqué par défaut */
+        display: none;
+      }
+
 ul li i {
     display: flex;
     align-items: center;
@@ -277,4 +296,4 @@ ul li a i {
         margin-right: 20px;
         transition: transform 0.3s ease;
     }
- }
+     }
