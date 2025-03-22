@@ -42,9 +42,9 @@
   <div id="easyrecycle" style="display:none;">
       <h3>Easyrecycle</h3>
       <p>EasyRecycle est mon tout premier projet web, réalisé en partant de zéro, sans aucune connaissance préalable en développement. Il répond à un besoin concret que j’ai observé : la difficulté à savoir dans quel bac jeter certains déchets, malgré la multiplication des consignes de tri.</p>
-      <p>J’ai conçu une interface simple et épurée, pensée pour offrir une réponse rapide et intuitive, sans surcharge d’informations ni manipulations complexes.</p>
+      <p>J’ai conçu une interface simple et épurée, pensée pour offrir une réponse rapide, sans surcharge d’informations ni manipulations complexes.</p>
       <p>Pour ce projet, j'ai suivi les cours en ligne du MDN Web Docs, en explorant notamment les bases d’HTML, de CSS, ainsi que le tutoriel "Premiers pas" en JavaScript avec le jeu "Number-guessing". J’ai également utilisé ChatGPT pour m’aider à comprendre et résoudre certaines problématiques de mise en forme qui se sont présentées au fil du projet, et pour m’initier à la création d’une base de données au format JSON.</p>
-      <p>Une difficulté majeure a été la recherche d'une API adaptée : les bases existantes ne correspondaient pas aux consignes de tri locales, très variables en France. Pour contourner cela, j’ai créé ma propre base de données (non exhaustive) regroupant les déchets du quotidien les plus courants, en me basant sur les pratiques de tri de ma région.</p>
+      <p>Une difficulté majeure a été la recherche d'une API adaptée : les bases existantes ne correspondaient pas aux pratiques de tri locales, très variables en France. Pour contourner cela, j’ai créé ma propre base de données (non exhaustive) regroupant les déchets du quotidien les plus courants, en me basant sur les consignes de tri de ma commune.</p>
       <p>J’ai pris soin de commenter mon code tout au long du développement afin de pouvoir m’y référer pour mes futurs projets et consolider mes apprentissages.</p>
       <p>Ce projet m'a permis d'apprendre beaucoup de concepts essentiels en développement web et de réaliser la complexité qu'il y a derrière même des applications simples. C'est un premier pas vers des projets plus ambitieux.</p>
       <button onclick="window.open('https://gagathe121.github.io/easyrecycle/', '_blank')">Visiter le site</button>
@@ -71,7 +71,7 @@
             <li>Mise en page en colonnes: Manipuler le DOM et utiliser CSS Grid/Flexbox pour créer et organiser une liste sur 3 colonnes.</li>
             <li>Impression & export PDF : Apprendre à utiliser les media queries CSS "print" pour un rendu imprimable et gérer l’export en PDF via le navigateur.</li>
          </ul>
-         </div>
+        </div>
          <br>
          <br>
         <div id="projet3" style="display:none;">
@@ -85,10 +85,13 @@
          </ul>
         </div>    
   
-
 <footer>
     <p><a href="mailto:aurormuller@gmail.com" class="contact-btn">Me contacter</a></p>
-    <p>© 2025 Site réalisé avec HTML, CSS et JavaScript - By Aml</p>
+    <p>© 2025 | Aml | Tous droits réservés</p>
+    <span id="toggle-apropos" class="apropos-link">À propos</span> <!-- lien pour afficher le texte à propos -->
+  <div id="apropos-content" class="apropos-content"> <!-- Contenu à propos masqué par défaut -->
+    <p>Ce site est réalisé avec HTML, CSS et Javascript.</p>
+ </div>
 </footer>
 
   <script src="script.js"></script>
